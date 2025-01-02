@@ -1,0 +1,36 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "boundedBy": null,
+                "msGeometry": null,
+                "msGeometryOSGB": null,
+                "id": "107",
+                "sensor": "Porthleven",
+                "institution": "Southwest Regional Coastal Monitoring Programme; National Network of Regional Coastal Monitoring Programmes",
+                "date": "20250104#093000",
+                "hs": "1.400",
+                "hmax": "2.450",
+                "sst": "11.150",
+                "type": "waves",
+                "value": "220.800",
+                "tp": "10.530",
+                "tz": "5.4050",
+                "pdir": "220.800",
+                "spread": "30.600",
+                "te": "7.500",
+                "power": "7.210"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.30745,
+                    50.06223
+                ]
+            },
+            "id": "waves.107"
+        }
+    ]
+}
