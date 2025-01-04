@@ -1,5 +1,8 @@
 # coastal-monitoring-client
-Python client for the [Coastal Monitoring API](https://coastalmonitoring.org/ccoresources/api/).
+
+[![Tests](https://github.com/n-n-s/coastal-monitoring-client/actions/workflows/merge.yaml/badge.svg)](https://github.com/n-n-s/coastal-monitoring-client/actions/workflows/merge.yaml)
+
+Python client for the [Coastal Monitoring API](https://coastalmonitoring.org/ccoresources/api/). This client enables the user to conveniently retrieve data programmatically.
 
 You will need contact Coastal Monitoring to request a personal API Key and specify a domain for API requests.
 *(Fill in and submit the form at the bottom of the [webpage](https://coastalmonitoring.org/ccoresources/api/))*
