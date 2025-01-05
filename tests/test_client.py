@@ -22,4 +22,4 @@ def test_observation():
     assert isinstance(actual, Observation)
 
     # check date has been parsed correctly
-    assert actual.features[0].properties.date == dt.datetime(2025, 1, 4, 9, 30, 0)
+    assert actual.features[0].properties.date == dt.datetime(2025, 1, 4, 9, 30, 0).replace(tzinfo=dt.UTC)

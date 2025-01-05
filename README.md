@@ -9,6 +9,14 @@ You will need contact Coastal Monitoring to request a personal API Key and speci
 
 ## Usage
 
+Print glossary of wave measurement parameters to console:
+
+```python
+from coastal_monitoring_client.glossary import Glossary
+
+Glossary.print()
+```
+
 Example of getting the most recent observations for the Porthleven sensor:
 
 ```python
