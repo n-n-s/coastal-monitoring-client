@@ -15,7 +15,7 @@ class MeasurementUnits(str, Enum):
     METRES = "m"
     SECONDS = "s"
     DEGREES_CELCIUS = "°C"
-    KW_PER_METRE_SQUARED = "kW/m^2"
+    KW_PER_METRE = "kW/m"
     DEGREES = "°"
 
 
@@ -78,8 +78,8 @@ class Glossary:
     )
     power = WaveParameter(
         abbreviation="power",
-        descriptive_name="wave_power_kwperm2",
-        measurement_units=MeasurementUnits.KW_PER_METRE_SQUARED,
+        descriptive_name="wave_power_kwperm",
+        measurement_units=MeasurementUnits.KW_PER_METRE,
         description="Wave power. The rate of transfer of energy through each metre of wavefront.",
     )
     pdir = WaveParameter(
