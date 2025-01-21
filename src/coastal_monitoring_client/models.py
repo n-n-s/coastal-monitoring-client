@@ -38,17 +38,17 @@ class PropertiesWave(BaseModelExtension):
     sensor: str = Field(description="Name of sensor.", examples=["Porthleven"])
     institution: str
     date: Annotated[dt.datetime, BeforeValidator(_parse_datetime)]
-    hs: float
-    hmax: float
-    sst: float
+    hs: Annotated[float | None, BeforeValidator(eval)]
+    hmax: Annotated[float | None, BeforeValidator(eval)]
+    sst: Annotated[float | None, BeforeValidator(eval)]
     type: Endpoints
-    value: float
-    tp: float
-    tz: float
-    pdir: float
-    spread: float
-    te: float
-    power: float
+    value: Annotated[float | None, BeforeValidator(eval)]
+    tp: Annotated[float | None, BeforeValidator(eval)]
+    tz: Annotated[float | None, BeforeValidator(eval)]
+    pdir: Annotated[float | None, BeforeValidator(eval)]
+    spread: Annotated[float | None, BeforeValidator(eval)]
+    te: Annotated[float | None, BeforeValidator(eval)]
+    power: Annotated[float | None, BeforeValidator(eval)]
 
     def to_dataframe(self) -> pd.DataFrame:
         """Time series of feature properties data with `date` as a pd.DatetimeIndex."""

@@ -50,3 +50,18 @@ def test_to_dataframe():
 
     # check dataframe values
     pd.testing.assert_frame_equal(actual, expected)
+
+
+def test_parse_float_or_none_strings():
+    with (DATA_DIR / "observation_waves.json").open() as f:
+        data = json.load(f)
+
+    data["features"][0]["properties"]["hmax"] = "None"
+    data["features"][0]["properties"]["te"] = "None"
+    data["features"][0]["properties"]["power"] = "None"
+
+    actual = Observation.model_validate(data)
+
+    assert actual.features[0].properties.hmax is None
+    assert actual.features[0].properties.te is None
+    assert actual.features[0].properties.power is None
